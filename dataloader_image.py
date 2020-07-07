@@ -102,11 +102,11 @@ def get_ood_image_data(data_type, batch_size, input_TF, dataroot):
     elif data_type == 'cifar100':
         _, test_loader = get_cifar100(batch_size=batch_size, train_TF=input_TF, test_TF=input_TF, data_root=dataroot, num_workers=1)
     elif data_type == 'imagenet_crop':
-        dataroot = os.path.expanduser(os.path.join(dataroot, 'Imagenet'))
+        dataroot = os.path.expanduser(os.path.join(dataroot, 'Imagenet_crop'))
         testsetout = datasets.ImageFolder(dataroot, transform=input_TF)
         test_loader = torch.utils.data.DataLoader(testsetout, batch_size=batch_size, shuffle=False, num_workers=1)
     elif data_type == 'lsun_crop':
-        dataroot = os.path.expanduser(os.path.join(dataroot, 'LSUN'))
+        dataroot = os.path.expanduser(os.path.join(dataroot, 'LSUN_crop'))
         testsetout = datasets.ImageFolder(dataroot, transform=input_TF)
         test_loader = torch.utils.data.DataLoader(testsetout, batch_size=batch_size, shuffle=False, num_workers=1)
     elif data_type == 'imagenet_resize':

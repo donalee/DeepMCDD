@@ -6,7 +6,7 @@ import numpy as np
 def get_table_data(batch_size, data_dir, dataset, oodclass_idx, fold_idx, **kwargs):
 
     data_path = os.path.join(data_dir, dataset + '_preproc.npy')
-    features, labels, num_classes = np.load(data_path)
+    features, labels, num_classes = np.load(data_path, allow_pickle=True)
     n_data = len(labels)
 
     id_classes = [c for c in range(num_classes) if c != oodclass_idx]
@@ -44,7 +44,7 @@ def get_table_data(batch_size, data_dir, dataset, oodclass_idx, fold_idx, **kwar
 def get_total_table_data(batch_size, data_dir, dataset, fold_idx, **kwargs):
 
     data_path = os.path.join(data_dir, dataset + '_preproc.npy')
-    features, labels, num_classes = np.load(data_path)
+    features, labels, num_classes = np.load(data_path, allow_pickle=True)
     n_data = len(labels)
     id_indices = [i for i in range(len(labels))] 
 

@@ -33,7 +33,7 @@ def main():
     if os.path.isdir(outdir) == False:
         os.mkdir(outdir)
     if os.path.isdir(args.modeldir) == False:
-        os.mkdir(modeldir)
+        os.mkdir(args.modeldir)
 
     torch.cuda.manual_seed(0)
     torch.cuda.manual_seed_all(0)
