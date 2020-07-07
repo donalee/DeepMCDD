@@ -1,4 +1,4 @@
-# Multi-class Data Description for Out-of-distribution Detection
+# Multi-class Data Description (Deep-MCDD) for Out-of-distribution Detection
 
 This is the author code of ["Multi-class Data Description for Out-of-distribution Detection"]().
 Some codes are implemented based on [Deep Mahalanobis Detector](https://github.com/pokaxpoka/deep_Mahalanobis_detector).
