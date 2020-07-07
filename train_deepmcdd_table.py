@@ -8,7 +8,7 @@ from utils import compute_confscores, compute_metrics, print_ood_results, print_
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', required=True, help='gas | shuttle | drive | mnist')
-parser.add_argument('--net_type', required=True, help='resnet | densenet')
+parser.add_argument('--net_type', required=True, help='mlp')
 parser.add_argument('--datadir', default='./table_data/', help='path to dataset')
 parser.add_argument('--outdir', default='./output/', help='folder to output results')
 parser.add_argument('--oodclass_idx', type=int, default=0, help='index of the OOD class')
