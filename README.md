@@ -34,12 +34,12 @@ Place them in the directory `./image_data/`.
 - python
 - torch (GPU version only)
 
-### for tabular data
+#### Training MLP with Deep-MCDD for tabular data
 ```
 python train_deepmcdd_table.py --dataset gas --net_type mlp --oodclass_idx 0
 ```
 
-### for image data
+#### Training CNN with Deep-MCDD for image data
 ```
 python train_deepmcdd_image.py --dataset cifar10 --net_type resnet
 ```
