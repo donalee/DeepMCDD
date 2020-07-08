@@ -9,8 +9,6 @@ Some codes are implemented based on [Deep Mahalanobis Detector](https://github.c
 <img src="./figure/deepmcdd.png" width="800">
 </p>
 
-> Multi-class data description, termed as **Deep-MCDD**, learns class-conditional Gaussian distributions (or spherical boudnary for each class).
-
 ## Downloading tabular datasets
 
 The four multi-class tabular datsets reported in the paper can be downloaded from the below links.
