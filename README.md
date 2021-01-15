@@ -1,6 +1,6 @@
 # Multi-class Data Description (Deep-MCDD) for Out-of-distribution Detection
 
-This is the author code of ["Multi-class Data Description for Out-of-distribution Detection"]().
+This is the author code of ["Multi-class Data Description for Out-of-distribution Detection"](https://dl.acm.org/doi/abs/10.1145/3394486.3403189).
 Some codes are implemented based on [Deep Mahalanobis Detector](https://github.com/pokaxpoka/deep_Mahalanobis_detector).
 
 ## Overview
@@ -44,5 +44,11 @@ python train_deepmcdd_image.py --dataset cifar10 --net_type resnet
 
 ## Citation
 ```
-  to be updated
+@inproceedings{lee2020multi,
+  author = {Lee, Dongha and Yu, Sehun and Yu, Hwanjo},
+  title = {Multi-Class Data Description for Out-of-Distribution Detection},
+  year = {2020},
+  booktitle = {Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining},
+  pages = {1362–1370}
+}
 ```
