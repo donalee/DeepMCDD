@@ -113,7 +113,7 @@ def main():
                 _, predicted = torch.max(scores, 1)
                 total += labels.size(0)
                 correct += (predicted == labels).sum().item()
-                idacc = 100 * correct / total
+            idacc = 100 * correct / total
                 
             ood_results_list = []
             compute_confscores(model, test_id_loader, outdir, True)
